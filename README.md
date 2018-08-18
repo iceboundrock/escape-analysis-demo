@@ -7,3 +7,5 @@ To run this test,
 1. java -server -XX:+PrintGC -XX:-DoEscapeAnalysis -jar ./build/libs/escape-analysis-demo-1.0-SNAPSHOT.jar ***x***
  
 x can be 1 ~ 8 
+
+to change the ThreadStackSize, use -XX:ThreadStackSize=***ss***, the unit is KB
