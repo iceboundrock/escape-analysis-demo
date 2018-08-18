@@ -11,6 +11,6 @@ x can be 1 ~ 8
 to change the ThreadStackSize, use -XX:ThreadStackSize=***ss***, the unit is KB
 
 Some reference blog posts and documents:
-* [Official Java 7](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/performance-enhancements-7.html#escapeAnalysis)
+* Escape Analysis in [Official Java 7 docs](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/performance-enhancements-7.html#escapeAnalysis)
 * [Escape Analysis in Java](https://www.beyondjava.net/escape-analysis-java) from beyondjava.net
 * [Scalar Replacement](https://shipilev.net/jvm-anatomy-park/18-scalar-replacement/) from JVM Anatomy Park series on shipilev.net
