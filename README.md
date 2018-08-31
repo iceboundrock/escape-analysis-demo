@@ -9,7 +9,9 @@ To run this test,
 x can be 1 ~ 8 
 
 to change the ThreadStackSize, use -XX:ThreadStackSize=***ss***, the unit is KB
+
 to change the head size, use -Xms***size***m -Xms***size***m
+
 to enable G1GC, use  -XX:+UseG1GC
 
 Some reference blog posts and documents:
