@@ -6,13 +6,16 @@ To run this test,
 1. java -server -XX:+PrintGC -XX:+DoEscapeAnalysis -jar ./build/libs/escape-analysis-demo-1.0-SNAPSHOT.jar ***x***
 1. java -server -XX:+PrintGC -XX:-DoEscapeAnalysis -jar ./build/libs/escape-analysis-demo-1.0-SNAPSHOT.jar ***x***
  
-x can be 1 ~ 8 
+x can be 1 ~ 1 
 
 to change the ThreadStackSize, use -XX:ThreadStackSize=***ss***, the unit is KB
 
-to change the head size, use -Xms***size***m -Xms***size***m
+to change the head size, use
+1. -Xms**SIZE**m
+1. -Xmx**SIZE**m
 
 to enable G1GC, use  -XX:+UseG1GC
+to enable String Deduplication, use -XX:+UseStringDeduplication -XX:+PrintStringDeduplicationStatistics
 
 Some reference blog posts and documents:
 * Escape Analysis in [Official Java 7 docs](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/performance-enhancements-7.html#escapeAnalysis)
